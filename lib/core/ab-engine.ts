@@ -18,25 +18,45 @@ import {
 import { callLLM, checkApiKeys, LLMError } from "@/lib/llm/adapter";
 import { evaluateResponse } from "@/lib/llm/eval";
 
-// Inline types (legacy types.ts deleted)
-interface Experiment {
-  id: number; promptId: number; name: string;
-  baselineVersion: number; candidateVersion: number;
+// ---------------------------------------------------------------------------
+// Domain types — these describe the *parsed* shapes returned by the engine.
+// The store layer serializes `results` and `metrics` as JSON strings; the
+// engine parses them before returning, so consumers never see the raw string
+// form through the engine's public API.
+// ---------------------------------------------------------------------------
+
+export interface Experiment {
+  id: number;
+  promptId: number;
+  name: string;
+  baselineVersion: number;
+  candidateVersion: number;
   status: "draft" | "running" | "completed";
-  results: ExperimentResults | string | null;
+  /** Parsed from the JSON string stored by the persistence layer. */
+  results: ExperimentResults | null;
   createdAt: string;
 }
-interface ExperimentResults {
-  baselineScore: number; candidateScore: number;
+
+export interface ExperimentResults {
+  baselineScore: number;
+  candidateScore: number;
   winner: "baseline" | "candidate" | "tie";
   comparisons: ComparisonItem[];
 }
-interface ComparisonItem {
-  metric: string; baseline: number; candidate: number; difference: number;
+
+export interface ComparisonItem {
+  metric: string;
+  baseline: number;
+  candidate: number;
+  difference: number;
 }
-interface Evaluation {
-  id: number; experimentId: number; score: number;
-  metrics: Record<string, unknown> | null | string;
+
+export interface Evaluation {
+  id: number;
+  experimentId: number;
+  score: number;
+  /** Parsed from the JSON string stored by the persistence layer. */
+  metrics: Record<string, unknown> | null;
   createdAt: string;
 }
 
