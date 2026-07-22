@@ -2,3 +2,9 @@ node_modules/
 .next/
 *.db
 .env
+.env.local
+data.json
+.npmrc
+node_modules
+test-results
+playwright-report
