@@ -3,8 +3,8 @@
 > Open-source Prompt version control & A/B testing platform. **Git for your prompts.**
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/devoutzhutao/promptlab/actions)
-[![Stars](https://img.shields.io/badge/stars-0-lightgrey.svg)](https://github.com/devoutzhutao/promptlab/stargazers)
+[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/DevoutZhu/promptlab/actions)
+[![Stars](https://img.shields.io/badge/stars-0-lightgrey.svg)](https://github.com/DevoutZhu/promptlab/stargazers)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@ PromptLab solves this: **store, version, test, and deploy prompts like code.** G
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/devoutzhutao/promptlab.git
+git clone https://github.com/DevoutZhu/promptlab.git
 cd promptlab
 
 # 2. Install dependencies and start the dev server
@@ -62,8 +62,8 @@ That's it. Create your first project, write a prompt, and start versioning.
 Git-like versioning purpose-built for prompts. Every edit creates a new version. Browse the full history, compare any two versions side-by-side with syntax-highlighted diffs, and roll back to any previous version instantly.
 
 ```
-v12  feat: add chain-of-thought instruction    2026-07-21   devoutzhutao
-v11  fix: reduce token count by 15%             2026-07-20   devoutzhutao
+v12  feat: add chain-of-thought instruction    2026-07-21   DevoutZhu
+v11  fix: reduce token count by 15%             2026-07-20   DevoutZhu
 v10  feat: add few-shot examples for edge cases 2026-07-18   alice
 ```
 
@@ -184,15 +184,15 @@ graph TB
 |:---------|:------------|
 | [User Guide](docs/user-guide.md) | Full walkthrough: projects, prompts, versioning, A/B testing, CLI |
 | [Contributing](CONTRIBUTING.md) | How to contribute to PromptLab |
-| [API Reference](https://github.com/devoutzhutao/promptlab/wiki/API) | REST API documentation (Wiki) |
-| [Roadmap](https://github.com/devoutzhutao/promptlab/wiki/Roadmap) | Upcoming features and milestones |
+| [API Reference](https://github.com/DevoutZhu/promptlab/wiki/API) | REST API documentation (Wiki) |
+| [Roadmap](https://github.com/DevoutZhu/promptlab/wiki/Roadmap) | Upcoming features and milestones |
 
 ---
 
 ## Community
 
-- **Issues**: [GitHub Issues](https://github.com/devoutzhutao/promptlab/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/devoutzhutao/promptlab/discussions)
+- **Issues**: [GitHub Issues](https://github.com/DevoutZhu/promptlab/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/DevoutZhu/promptlab/discussions)
 - **中文社区**: 加入微信群获取支持和最新动态 (coming soon)
 
 ---
@@ -205,7 +205,7 @@ PromptLab is open-source under the [Apache License 2.0](LICENSE).
 
 ## Author
 
-**Devout Zhu** ([@devoutzhutao](https://github.com/devoutzhutao))
+**Devout Zhu** ([@DevoutZhu](https://github.com/DevoutZhu))
 
 ---
 
@@ -227,7 +227,7 @@ PromptLab 解决这个问题：**像管理代码一样管理 Prompt。** 每次�
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/devoutzhutao/promptlab.git
+git clone https://github.com/DevoutZhu/promptlab.git
 cd promptlab
 
 # 2. 安装依赖并启动
@@ -264,4 +264,4 @@ Next.js 14 | TypeScript 5 | Tailwind CSS | SQLite/Turso | Drizzle ORM | Recharts
 
 ## 作者
 
-**Devout Zhu** ([@devoutzhutao](https://github.com/devoutzhutao))
+**Devout Zhu** ([@DevoutZhu](https://github.com/DevoutZhu))
