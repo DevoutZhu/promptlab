@@ -1,0 +1,804 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Customer Support Bot",
+      "description": "System prompts for customer support chatbot",
+      "createdAt": "2026-07-22T09:01:10.424Z"
+    },
+    {
+      "id": 2,
+      "name": "Content Generator",
+      "description": "Prompts for blog and social media generation",
+      "createdAt": "2026-07-22T09:01:10.425Z"
+    },
+    {
+      "id": 3,
+      "name": "Code Assistant",
+      "description": "AI coding assistant prompt library",
+      "createdAt": "2026-07-22T09:01:10.425Z"
+    },
+    {
+      "id": 4,
+      "name": "E2E-Test-1784723874743",
+      "description": "",
+      "createdAt": "2026-07-22T12:37:56.192Z"
+    },
+    {
+      "id": 5,
+      "name": "E2E-Test-1784725015681",
+      "description": "",
+      "createdAt": "2026-07-22T12:56:56.420Z"
+    },
+    {
+      "id": 6,
+      "name": "E2E-Test-1784725090058",
+      "description": "",
+      "createdAt": "2026-07-22T12:58:10.190Z"
+    },
+    {
+      "id": 7,
+      "name": "E2E-Test-1784726009503",
+      "description": "",
+      "createdAt": "2026-07-22T13:13:31.991Z"
+    },
+    {
+      "id": 8,
+      "name": "E2E-Test-1784726123103",
+      "description": "",
+      "createdAt": "2026-07-22T13:15:23.356Z"
+    },
+    {
+      "id": 9,
+      "name": "要符合东方",
+      "description": "Seeger",
+      "createdAt": "2026-07-22T13:57:47.023Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": 1,
+      "projectId": 1,
+      "name": "system-prompt",
+      "content": "You are a helpful customer support agent for {{company_name}}. Be {{tone}} and professional. Greet {{customer_name}} by name.",
+      "variables": "[\"company_name\",\"tone\",\"customer_name\"]",
+      "version": 1,
+      "createdAt": "2026-07-22T09:01:10.426Z",
+      "updatedAt": "2026-07-22T09:01:10.426Z"
+    },
+    {
+      "id": 2,
+      "projectId": 1,
+      "name": "greeting-prompt",
+      "content": "Hello {{customer_name}}, welcome to {{company_name}} support. How can I help?",
+      "variables": "[\"company_name\",\"customer_name\"]",
+      "version": 1,
+      "createdAt": "2026-07-22T09:01:10.426Z",
+      "updatedAt": "2026-07-22T09:01:10.426Z"
+    },
+    {
+      "id": 3,
+      "projectId": 2,
+      "name": "blog-outline",
+      "content": "Write a blog outline about {{topic}}. Audience: {{audience}}. Tone: {{tone}}.",
+      "variables": "[\"topic\",\"audience\",\"tone\"]",
+      "version": 1,
+      "createdAt": "2026-07-22T09:01:10.427Z",
+      "updatedAt": "2026-07-22T09:01:10.427Z"
+    },
+    {
+      "id": 4,
+      "projectId": 2,
+      "name": "social-post",
+      "content": "Create a {{platform}} post about {{topic}}. Max {{max_length}} chars.",
+      "variables": "[\"platform\",\"topic\",\"max_length\"]",
+      "version": 1,
+      "createdAt": "2026-07-22T09:01:10.427Z",
+      "updatedAt": "2026-07-22T09:01:10.427Z"
+    },
+    {
+      "id": 5,
+      "projectId": 3,
+      "name": "code-review",
+      "content": "Review this {{language}} code for bugs:\\n```\\n{{code}}\\n```",
+      "variables": "[\"language\",\"code\"]",
+      "version": 1,
+      "createdAt": "2026-07-22T09:01:10.428Z",
+      "updatedAt": "2026-07-22T09:01:10.428Z"
+    },
+    {
+      "id": 6,
+      "projectId": 1,
+      "name": "system-prompt",
+      "content": "You are a {{tone}} customer support agent for {{company_name}}. Greet {{customer_name}}. Keep under 150 words. Suggest help articles.",
+      "variables": "[\"company_name\",\"tone\",\"customer_name\"]",
+      "version": 2,
+      "createdAt": "2026-07-22T09:01:10.428Z",
+      "updatedAt": "2026-07-22T09:01:10.428Z"
+    },
+    {
+      "id": 7,
+      "projectId": 1,
+      "name": "test-new-prompt",
+      "content": "test",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T13:33:35.548Z",
+      "updatedAt": "2026-07-22T13:33:35.548Z"
+    },
+    {
+      "id": 8,
+      "projectId": 1,
+      "name": "test",
+      "content": "hello",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T13:33:46.918Z",
+      "updatedAt": "2026-07-22T13:33:46.918Z"
+    },
+    {
+      "id": 9,
+      "projectId": 1,
+      "name": "test-prompt",
+      "content": "hello {{name}}",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T13:33:59.357Z",
+      "updatedAt": "2026-07-22T13:33:59.357Z"
+    },
+    {
+      "id": 10,
+      "projectId": 1,
+      "name": "e2e-test",
+      "content": "hello {{name}}",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T13:34:18.735Z",
+      "updatedAt": "2026-07-22T13:34:18.735Z"
+    },
+    {
+      "id": 11,
+      "projectId": 1,
+      "name": "e2e-test",
+      "content": "hello {{name}}, how can I help?",
+      "variables": "[]",
+      "version": 2,
+      "createdAt": "2026-07-22T13:34:20.686Z",
+      "updatedAt": "2026-07-22T13:34:20.686Z"
+    },
+    {
+      "id": 12,
+      "projectId": 1,
+      "name": "final-test",
+      "content": "test {{x}}",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T13:50:30.638Z",
+      "updatedAt": "2026-07-22T13:50:30.638Z"
+    },
+    {
+      "id": 13,
+      "projectId": 1,
+      "name": "final-test",
+      "content": "test {{x}} v2",
+      "variables": "[]",
+      "version": 2,
+      "createdAt": "2026-07-22T13:50:31.151Z",
+      "updatedAt": "2026-07-22T13:50:31.151Z"
+    },
+    {
+      "id": 14,
+      "projectId": 1,
+      "name": "x",
+      "content": "x",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T13:51:00.192Z",
+      "updatedAt": "2026-07-22T13:51:00.192Z"
+    },
+    {
+      "id": 15,
+      "projectId": 1,
+      "name": "x",
+      "content": "x v2",
+      "variables": "[]",
+      "version": 2,
+      "createdAt": "2026-07-22T13:51:00.471Z",
+      "updatedAt": "2026-07-22T13:51:00.471Z"
+    },
+    {
+      "id": 16,
+      "projectId": 1,
+      "name": "btn-test",
+      "content": "New prompt",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T14:02:13.525Z",
+      "updatedAt": "2026-07-22T14:02:13.525Z"
+    },
+    {
+      "id": 17,
+      "projectId": 1,
+      "name": "prompt-1784729014884",
+      "content": "New prompt",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T14:03:36.080Z",
+      "updatedAt": "2026-07-22T14:03:36.080Z"
+    },
+    {
+      "id": 18,
+      "projectId": 1,
+      "name": "prompt-1784729112716",
+      "content": "New prompt",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T14:05:12.730Z",
+      "updatedAt": "2026-07-22T14:05:12.730Z"
+    },
+    {
+      "id": 19,
+      "projectId": 1,
+      "name": "prompt-1784730125544",
+      "content": "New prompt",
+      "variables": "[]",
+      "version": 1,
+      "createdAt": "2026-07-22T14:22:05.874Z",
+      "updatedAt": "2026-07-22T14:22:05.874Z"
+    }
+  ],
+  "experiments": [
+    {
+      "id": 1,
+      "promptId": 1,
+      "name": "Tone optimization",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":72.5,\"candidateScore\":89.3,\"winner\":\"candidate\",\"improvement\":\"+16.8%\"}",
+      "createdAt": "2026-07-22T09:01:10.429Z"
+    },
+    {
+      "id": 2,
+      "promptId": 1,
+      "name": "千问跨版本评测",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":98.2,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":98.2,\"difference\":-1.8},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":2.71,\"difference\":2.71},{\"metric\":\"iterations\",\"baseline\":5,\"candidate\":5,\"difference\":0}]}",
+      "createdAt": "2026-07-22T09:01:10.742Z"
+    },
+    {
+      "id": 3,
+      "promptId": 1,
+      "name": "千问跨版本评测",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":98,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":98,\"difference\":-2},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":1.67,\"difference\":1.67},{\"metric\":\"iterations\",\"baseline\":5,\"candidate\":5,\"difference\":0}]}",
+      "createdAt": "2026-07-22T09:42:34.377Z"
+    },
+    {
+      "id": 4,
+      "promptId": 1,
+      "name": "DeepSeek vs 千问",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T10:22:01.026Z"
+    },
+    {
+      "id": 5,
+      "promptId": 1,
+      "name": "DeepSeek vs 千问 v2",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":99.8,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":99.8,\"difference\":-0.2},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0.4,\"difference\":0.4},{\"metric\":\"iterations\",\"baseline\":5,\"candidate\":5,\"difference\":0}]}",
+      "createdAt": "2026-07-22T11:34:35.194Z"
+    },
+    {
+      "id": 6,
+      "promptId": 10,
+      "name": "e2eʵ��",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":63,\"candidateScore\":100,\"winner\":\"candidate\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":63,\"candidate\":100,\"difference\":37},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T13:34:20.794Z"
+    },
+    {
+      "id": 7,
+      "promptId": 12,
+      "name": "finalʵ��",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":95,\"candidateScore\":100,\"winner\":\"candidate\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":95,\"candidate\":100,\"difference\":5},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T13:50:31.447Z"
+    },
+    {
+      "id": 8,
+      "promptId": 14,
+      "name": "x",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":97,\"candidateScore\":86,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":97,\"candidate\":86,\"difference\":-11},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T13:51:00.566Z"
+    },
+    {
+      "id": 9,
+      "promptId": 1,
+      "name": "实验-1784728635331",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T13:57:15.338Z"
+    },
+    {
+      "id": 10,
+      "promptId": 1,
+      "name": "实验-1784728640347",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T13:57:20.354Z"
+    },
+    {
+      "id": 11,
+      "promptId": 1,
+      "name": "实验-1784729138070",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":50,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":50,\"difference\":-50},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:05:38.078Z"
+    },
+    {
+      "id": 12,
+      "promptId": 1,
+      "name": "实验-1784729139840",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:05:39.848Z"
+    },
+    {
+      "id": 13,
+      "promptId": 1,
+      "name": "实验-1784729141204",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:05:41.212Z"
+    },
+    {
+      "id": 14,
+      "promptId": 1,
+      "name": "实验-1784729146463",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:05:46.473Z"
+    },
+    {
+      "id": 15,
+      "promptId": 1,
+      "name": "实验-1784729148442",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":50,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":50,\"difference\":-50},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:05:48.451Z"
+    },
+    {
+      "id": 16,
+      "promptId": 6,
+      "name": "实验-1784729180328",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":50,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":50,\"difference\":-50},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:06:20.339Z"
+    },
+    {
+      "id": 17,
+      "promptId": 6,
+      "name": "实验-1784729208962",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":99,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":99,\"difference\":-1},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:06:48.973Z"
+    },
+    {
+      "id": 18,
+      "promptId": 6,
+      "name": "test-exp",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:14:55.863Z"
+    },
+    {
+      "id": 19,
+      "promptId": 6,
+      "name": "实验-1784729760606",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:16:00.615Z"
+    },
+    {
+      "id": 20,
+      "promptId": 6,
+      "name": "实验-1784729765652",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":99,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":99,\"difference\":-1},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:16:05.660Z"
+    },
+    {
+      "id": 21,
+      "promptId": 6,
+      "name": "实验-1784729814337",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:16:54.346Z"
+    },
+    {
+      "id": 22,
+      "promptId": 6,
+      "name": "实验-1784729819399",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:16:59.409Z"
+    },
+    {
+      "id": 23,
+      "promptId": 6,
+      "name": "实验-1784729861619",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:17:41.629Z"
+    },
+    {
+      "id": 24,
+      "promptId": 6,
+      "name": "实验-1784729866665",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:17:46.674Z"
+    },
+    {
+      "id": 25,
+      "promptId": 6,
+      "name": "实验-1784729903700",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":99,\"winner\":\"baseline\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":99,\"difference\":-1},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:18:23.710Z"
+    },
+    {
+      "id": 26,
+      "promptId": 6,
+      "name": "实验-1784730062128",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:21:02.137Z"
+    },
+    {
+      "id": 27,
+      "promptId": 6,
+      "name": "实验-1784730091329",
+      "baselineVersion": 1,
+      "candidateVersion": 2,
+      "status": "completed",
+      "results": "{\"baselineScore\":100,\"candidateScore\":100,\"winner\":\"tie\",\"comparisons\":[{\"metric\":\"overall_score\",\"baseline\":100,\"candidate\":100,\"difference\":0},{\"metric\":\"score_stddev\",\"baseline\":0,\"candidate\":0,\"difference\":0},{\"metric\":\"iterations\",\"baseline\":1,\"candidate\":1,\"difference\":0}]}",
+      "createdAt": "2026-07-22T14:21:31.337Z"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": 1,
+      "experimentId": 1,
+      "score": 89.3,
+      "metrics": "{}",
+      "createdAt": "2026-07-22T09:01:10.430Z"
+    },
+    {
+      "id": 2,
+      "experimentId": 1,
+      "score": 87.1,
+      "metrics": "{}",
+      "createdAt": "2026-07-22T09:01:10.431Z"
+    },
+    {
+      "id": 3,
+      "experimentId": 2,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T09:01:20.073Z"
+    },
+    {
+      "id": 4,
+      "experimentId": 2,
+      "score": 0,
+      "metrics": "{\"iteration\":2,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T09:01:20.074Z"
+    },
+    {
+      "id": 5,
+      "experimentId": 2,
+      "score": -7,
+      "metrics": "{\"iteration\":3,\"baselineScore\":100,\"candidateScore\":93}",
+      "createdAt": "2026-07-22T09:01:20.075Z"
+    },
+    {
+      "id": 6,
+      "experimentId": 2,
+      "score": -2,
+      "metrics": "{\"iteration\":4,\"baselineScore\":100,\"candidateScore\":98}",
+      "createdAt": "2026-07-22T09:01:20.075Z"
+    },
+    {
+      "id": 7,
+      "experimentId": 2,
+      "score": 0,
+      "metrics": "{\"iteration\":5,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T09:01:20.076Z"
+    },
+    {
+      "id": 8,
+      "experimentId": 3,
+      "score": -2,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":98}",
+      "createdAt": "2026-07-22T09:42:42.881Z"
+    },
+    {
+      "id": 9,
+      "experimentId": 3,
+      "score": 0,
+      "metrics": "{\"iteration\":2,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T09:42:42.881Z"
+    },
+    {
+      "id": 10,
+      "experimentId": 3,
+      "score": -2,
+      "metrics": "{\"iteration\":3,\"baselineScore\":100,\"candidateScore\":98}",
+      "createdAt": "2026-07-22T09:42:42.882Z"
+    },
+    {
+      "id": 11,
+      "experimentId": 3,
+      "score": -1,
+      "metrics": "{\"iteration\":4,\"baselineScore\":100,\"candidateScore\":99}",
+      "createdAt": "2026-07-22T09:42:42.882Z"
+    },
+    {
+      "id": 12,
+      "experimentId": 3,
+      "score": -5,
+      "metrics": "{\"iteration\":5,\"baselineScore\":100,\"candidateScore\":95}",
+      "createdAt": "2026-07-22T09:42:42.883Z"
+    },
+    {
+      "id": 13,
+      "experimentId": 4,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T11:31:50.446Z"
+    },
+    {
+      "id": 14,
+      "experimentId": 5,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T11:35:28.809Z"
+    },
+    {
+      "id": 15,
+      "experimentId": 5,
+      "score": 0,
+      "metrics": "{\"iteration\":2,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T11:35:28.809Z"
+    },
+    {
+      "id": 16,
+      "experimentId": 5,
+      "score": 0,
+      "metrics": "{\"iteration\":3,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T11:35:28.810Z"
+    },
+    {
+      "id": 17,
+      "experimentId": 5,
+      "score": -1,
+      "metrics": "{\"iteration\":4,\"baselineScore\":100,\"candidateScore\":99}",
+      "createdAt": "2026-07-22T11:35:28.810Z"
+    },
+    {
+      "id": 18,
+      "experimentId": 5,
+      "score": 0,
+      "metrics": "{\"iteration\":5,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T11:35:28.811Z"
+    },
+    {
+      "id": 19,
+      "experimentId": 6,
+      "score": 37,
+      "metrics": "{\"iteration\":1,\"baselineScore\":63,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T13:34:29.648Z"
+    },
+    {
+      "id": 20,
+      "experimentId": 7,
+      "score": 5,
+      "metrics": "{\"iteration\":1,\"baselineScore\":95,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T13:50:47.521Z"
+    },
+    {
+      "id": 21,
+      "experimentId": 8,
+      "score": -11,
+      "metrics": "{\"iteration\":1,\"baselineScore\":97,\"candidateScore\":86}",
+      "createdAt": "2026-07-22T13:51:18.556Z"
+    },
+    {
+      "id": 22,
+      "experimentId": 9,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T13:57:26.483Z"
+    },
+    {
+      "id": 23,
+      "experimentId": 10,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T13:57:26.935Z"
+    },
+    {
+      "id": 24,
+      "experimentId": 12,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:05:48.760Z"
+    },
+    {
+      "id": 25,
+      "experimentId": 11,
+      "score": -50,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":50}",
+      "createdAt": "2026-07-22T14:05:52.002Z"
+    },
+    {
+      "id": 26,
+      "experimentId": 13,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:05:55.454Z"
+    },
+    {
+      "id": 27,
+      "experimentId": 14,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:05:56.905Z"
+    },
+    {
+      "id": 28,
+      "experimentId": 15,
+      "score": -50,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":50}",
+      "createdAt": "2026-07-22T14:06:02.288Z"
+    },
+    {
+      "id": 29,
+      "experimentId": 16,
+      "score": -50,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":50}",
+      "createdAt": "2026-07-22T14:06:30.977Z"
+    },
+    {
+      "id": 30,
+      "experimentId": 17,
+      "score": -1,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":99}",
+      "createdAt": "2026-07-22T14:06:57.926Z"
+    },
+    {
+      "id": 31,
+      "experimentId": 18,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:15:04.427Z"
+    },
+    {
+      "id": 32,
+      "experimentId": 19,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:16:09.273Z"
+    },
+    {
+      "id": 33,
+      "experimentId": 20,
+      "score": -1,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":99}",
+      "createdAt": "2026-07-22T14:16:13.668Z"
+    },
+    {
+      "id": 34,
+      "experimentId": 21,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:17:02.732Z"
+    },
+    {
+      "id": 35,
+      "experimentId": 22,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:17:09.600Z"
+    },
+    {
+      "id": 36,
+      "experimentId": 23,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:17:53.048Z"
+    },
+    {
+      "id": 37,
+      "experimentId": 24,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:17:55.339Z"
+    },
+    {
+      "id": 38,
+      "experimentId": 25,
+      "score": -1,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":99}",
+      "createdAt": "2026-07-22T14:18:33.223Z"
+    },
+    {
+      "id": 39,
+      "experimentId": 26,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:21:12.453Z"
+    },
+    {
+      "id": 40,
+      "experimentId": 27,
+      "score": 0,
+      "metrics": "{\"iteration\":1,\"baselineScore\":100,\"candidateScore\":100}",
+      "createdAt": "2026-07-22T14:21:39.723Z"
+    }
+  ]
+}
