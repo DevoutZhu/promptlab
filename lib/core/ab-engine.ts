@@ -23,7 +23,8 @@ interface Experiment {
   id: number; promptId: number; name: string;
   baselineVersion: number; candidateVersion: number;
   status: "draft" | "running" | "completed";
-  results: string | null; createdAt: string;
+  results: ExperimentResults | string | null;
+  createdAt: string;
 }
 interface ExperimentResults {
   baselineScore: number; candidateScore: number;
