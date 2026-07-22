@@ -36,7 +36,8 @@ interface ComparisonItem {
 }
 interface Evaluation {
   id: number; experimentId: number; score: number;
-  metrics: string; createdAt: string;
+  metrics: Record<string, unknown> | null | string;
+  createdAt: string;
 }
 
 // ---------------------------------------------------------------------------
