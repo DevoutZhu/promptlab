@@ -2,7 +2,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const DATA_FILE = path.join(process.cwd(), 'data.json');
+const DATA_FILE = process.env.VERCEL
+  ? path.join('/tmp', 'data.json')
+  : path.join(process.cwd(), 'data.json');
 
 interface DB {
   projects: Project[];
