@@ -18,12 +18,25 @@ import {
 import { callLLM, checkApiKeys, LLMError } from "@/lib/llm/adapter";
 import { evaluateResponse } from "@/lib/llm/eval";
 
-import type {
-  Experiment,
-  ExperimentResults,
-  ComparisonItem,
-  Evaluation,
-} from "@/lib/core/types";
+// Inline types (legacy types.ts deleted)
+interface Experiment {
+  id: number; promptId: number; name: string;
+  baselineVersion: number; candidateVersion: number;
+  status: "draft" | "running" | "completed";
+  results: string | null; createdAt: string;
+}
+interface ExperimentResults {
+  baselineScore: number; candidateScore: number;
+  winner: "baseline" | "candidate" | "tie";
+  comparisons: ComparisonItem[];
+}
+interface ComparisonItem {
+  metric: string; baseline: number; candidate: number; difference: number;
+}
+interface Evaluation {
+  id: number; experimentId: number; score: number;
+  metrics: string; createdAt: string;
+}
 
 // ---------------------------------------------------------------------------
 // Default test variables
