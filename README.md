@@ -120,60 +120,49 @@ promptlab status
 
 ---
 
-## Architecture
+## Architecture / 系统架构
 
 ```mermaid
 graph TB
-    subgraph "Web Application (Next.js 14)"
-        W1["Prompt Editor<br/>Monaco-based with variable highlighting"]
-        W2["Version Browser<br/>Timeline view + side-by-side diff"]
-        W3["Experiment Dashboard<br/>A/B results + statistical analysis"]
-        W4["Team Workspace<br/>Project management + permissions"]
+    subgraph BROWSER["浏览器 (Browser)"]
+        HOME["🏠 首页 / Home"]
+        DASHBOARD["📊 项目面板 / Dashboard"]
+        EDITOR["✏️ Prompt 编辑器 / Editor"]
+        EXPERIMENT["🧪 A/B 实验 / Experiment"]
+        AGENT_UI["🤖 AI 优化 Agent / Optimizer Agent"]
     end
 
-    subgraph "API Layer (Next.js API Routes)"
-        A1["/api/prompts<br/>CRUD + versioning"]
-        A2["/api/experiments<br/>A/B test lifecycle"]
-        A3["/api/evaluations<br/>Score collection + aggregation"]
-        A4["/api/auth<br/>NextAuth.js + API keys"]
+    subgraph NEXT["Next.js 服务端"]
+        API["🔌 API 路由 / API Routes"]
+        RSC["🖥️ 服务端渲染 / SSR"]
     end
 
-    subgraph "Core Services"
-        S1["Version Engine<br/>Git-like commit chain + diff computation"]
-        S2["Experiment Engine<br/>Traffic splitting + statistical tests"]
-        S3["Evaluation Engine<br/>Metric collection + trend analysis"]
-        S4["Sync Engine<br/>Push/pull protocol for CLI ↔ server"]
+    subgraph CORE["核心服务 (Core Services)"]
+        PROMPT_STORE["📝 Prompt 版本管理 / Version Store"]
+        AB_ENGINE["🆚 A/B 评测引擎 / A/B Engine"]
+        LLM_ADAPTER["🤖 LLM 适配层 / LLM Adapter"]
+        OPTIMIZER["🧬 自动优化 Agent / Optimizer Agent"]
     end
 
-    subgraph "Data Layer"
-        D1[("SQLite / Turso<br/>Prompts, versions, experiments")]
-        D2[("File Store<br/>Prompt templates + assets")]
+    subgraph EXTERNAL["外部服务 (External)"]
+        DEEPSEEK["DeepSeek V4"]
+        QWEN["通义千问 / Qwen"]
     end
 
-    subgraph "CLI Tool"
-        C1["promptlab CLI<br/>login / push / pull / diff / status"]
+    subgraph STORAGE["数据存储 (Storage)"]
+        JSON["📁 JSON 文件存储"]
     end
 
-    W1 --> A1
-    W2 --> A1
-    W3 --> A2
-    W3 --> A3
-    W4 --> A4
+    BROWSER --> NEXT
+    NEXT --> CORE
+    CORE --> STORAGE
+    CORE --> EXTERNAL
 
-    A1 --> S1
-    A2 --> S2
-    A3 --> S3
-    A1 --> S4
-    A4 --> S4
-
-    S1 --> D1
-    S2 --> D1
-    S3 --> D1
-    S4 --> D1
-    S4 --> D2
-
-    C1 -->|HTTPS| A1
-    C1 -->|HTTPS| A4
+    style BROWSER fill:#e3f2fd,stroke:#1976d2
+    style NEXT fill:#e8f5e9,stroke:#388e3c
+    style CORE fill:#f3e5f5,stroke:#7b1fa2
+    style EXTERNAL fill:#fff3e0,stroke:#f57c00
+    style STORAGE fill:#fce4ec,stroke:#c62828
 ```
 
 ---
